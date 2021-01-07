@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@300&family=Amatic+SC:wght@700&family=Anton&family=Bangers&family=BioRhyme&family=Caveat&family=Cherry+Swash:wght@700&family=Corben:wght@700&family=Creepster&family=Economica:wght@700&family=Homemade+Apple&family=IM+Fell+DW+Pica+SC&family=Kaushan+Script&family=Londrina+Shadow&family=Montserrat+Subrayada&family=Oswald:wght@700&family=Permanent+Marker&family=Quicksand&family=Roboto+Condensed:wght@700&family=Teko&family=Vollkorn&display=swap');
+.header {
+  background-color: #fff;
+  width: 100%;
+  border-bottom: solid 5px #5989cf;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.post {
+  font-size: 30px;
+  font-weight: bold;
+  color: #6091d3;/*文字色*/
+  background: #fff;
+  border: solid 3px #6091d3;/*線*/
+  border-radius: 10px;/*角の丸み*/
+  font-family: 'Anton', sans-serif;
+}
+
+a {
+  background: linear-gradient(transparent 50%, #a8eaff 50%);
+  color: black;
+  text-decoration: none;
+  padding: 10px;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 40px;
+}
+
+ul {
+  display: flex;
+  margin:0 0 0 auto;
+  padding:0;
+  list-style:none;
+}
+
