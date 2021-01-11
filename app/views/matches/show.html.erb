@@ -31,4 +31,11 @@
          <div class='place-large'>
              <div class='show-place'>開催地：<%= @match.place %></div>
          </div>
+      <% if user_signed_in? && current_user.id == @match.user_id %>
+         <div class='match-edit'>
+            <%= link_to '試合結果の編集', edit_match_path(@match.id), method: :get, class: "match-red-btn" %>
+              <div class='or-text'>or</div>
+            <%= link_to '削除', match_path(@match.id), method: :delete, class:'match-destroy-btn' %>
+          </div>
+      <% end %>
 </li>

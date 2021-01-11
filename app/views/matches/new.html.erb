@@ -6,12 +6,12 @@
               <%# リーグ名 %>
               <div class='league'>
                   <div class='important2'>
-                  <div class='league-name'>リーグ名・大会名</div>
+                  <div class='league-name'>リーグ名・大会名(節数・回戦数）</div>
                   <div class="weight-bold-text">
                     <span class="indispensable">必須</span>
                     </div>
                   </div>
-                  <%= form.text_field :league, class:"league-text", id:"league-name", placeholder:"リーグ・大会名" %>
+                  <%= form.text_field :league, class:"league-text", id:"league-name", placeholder:"例）Jリーグ第１２節" %>
               </div>
               <%# リーグ名 %>
               <%# 試合会場 %>
@@ -22,7 +22,7 @@
                     <span class="indispensable">必須</span>
                   </div>
                 </div>
-                  <%= form.text_field :place, class:"place-text", id:"place-name", placeholder:"試合会場" %>
+                  <%= form.text_field :place, class:"place-text", id:"place-name", placeholder:"例）カンプ・ノウ" %>
                 </div>
     <%# ホームチーム名 %>
     <div class="team-name">
