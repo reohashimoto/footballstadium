@@ -1,0 +1,59 @@
+
+
+.title-contents {
+  background-image: image-url("image_top.jpg");
+  border: 1px solid #CCC;
+  height:700px;
+  min-width:100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  justify-content: center;
+}
+
+.new-match {
+  text-align: center;
+}
+
+.match-date {
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+.index-date1 {
+  font-size: 10px;
+}
+.list {
+  display: block;
+  background-color: white;
+  margin: 20px;
+}
+
+.item-img {
+  width: 13vh;
+  height: 13vh;
+}
+
+.match-important {
+  display: flex;
+  justify-content: center;
+}
+.match-content {
+  display: flex;
+  text-align: center;
+  border: 1px solid #CCC;
+  padding: 0 30px;
+}
+
+.score-name1 {
+  display: block;
+}
+
+.team-name1 {
+  font-size: 15px;
+}
+
+.score1 {
+  padding: 40px 10px 0 10px;
+}

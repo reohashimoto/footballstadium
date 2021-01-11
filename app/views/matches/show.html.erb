@@ -1,0 +1,34 @@
+<%= render "shared/second-header" %>
+<li class='list'>
+            <div class='match-date'>
+                    <div class='show-league'><%= @match.league %></div>
+                    <div class='show-date'><%= @match.date %></div>
+            </div>
+        <div class='match-important'>
+        <div class='match-content'>
+            <div class='score-name'>
+                <%= image_tag @match.home_team_image, class: "team-show-img" %>
+                <div class='team-show-name'>
+                  <%= @match.home_team_name %>
+                </div>
+            </div>
+            <div class='show-score'>
+              <%= @match.home_team_score %>
+            </div>
+          </div>
+          <div class='match-content'>
+            <div class='show-score'>
+              <%= @match.away_team_score %>
+            </div>
+            <div class='score-name'>
+                <%= image_tag @match.away_team_image, class: "team-show-img" %>
+                <div class='team-show-name'>
+                <%= @match.away_team_name %>
+                </div>
+            </div>
+          </div>
+        </div>
+         <div class='place-large'>
+             <div class='show-place'>開催地：<%= @match.place %></div>
+         </div>
+</li>
