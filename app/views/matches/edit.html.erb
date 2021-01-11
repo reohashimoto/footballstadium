@@ -1,0 +1,131 @@
+<%= render "shared/second-header" %>
+<div class="contents1">
+  <div class="contents2">
+    <h1 class="match-made">試合結果作成</h1>
+    <%= form_with(model: @match, local: true) do |form| %>
+              <%# リーグ名 %>
+              <div class='league'>
+                  <div class='important2'>
+                  <div class='league-name'>リーグ名・大会名(節数・回戦数）</div>
+                  <div class="weight-bold-text">
+                    <span class="indispensable">必須</span>
+                    </div>
+                  </div>
+                  <%= form.text_field :league, class:"league-text", id:"league-name", placeholder:"例）Jリーグ第１２節" %>
+              </div>
+              <%# リーグ名 %>
+              <%# 試合会場 %>
+              <div class='place'>
+                <div class='important2'>
+                  <div class='place-name'>試合会場</div>
+                  <div class="weight-bold-text">
+                    <span class="indispensable">必須</span>
+                  </div>
+                </div>
+                  <%= form.text_field :place, class:"place-text", id:"place-name", placeholder:"例）カンプ・ノウ" %>
+                </div>
+    <%# ホームチーム名 %>
+    <div class="team-name">
+        <div class='important2'>
+          <div class='team-names'>チーム名</div>
+            <div class="weight-bold-text">
+                    <span class="indispensable">必須</span>
+            </div>
+        </div>
+    <div class='team-vs'>
+      <div class="important">
+         <%= form.text_field :home_team_name, class:"home-team-text", id:"home-team-name", placeholder:"ホームチーム名" %>
+        </div>
+          <%# ホームチーム名 %>
+        <span class="versus">VS</span>
+          <%# アウェイチーム名%>
+          <div class="important">
+                <%= form.text_field :away_team_name, class:"away-team-text", id:"away-team-name", placeholder:"アウェイチーム名" %>
+          </div>
+        </div>
+      </div>
+      <%# アウェイチーム名%>
+    <%# ホームチーム画像 %>
+    <div class="team-image">
+      <div class='important2'>
+          <div class='team-image'>チーム画像</div>
+            <div class="weight-bold-text">
+                    <span class="indispensable">必須</span>
+            </div>
+        </div>
+        <div class='team-vs'>
+    <div class="img-upload">
+      <%= form.file_field :home_team_image, class:"team-image", id:"team-image" %>
+      <div class='image-text'>ホーム側</div>
+        <p>
+          クリックしてファイルをアップロード
+        </p>
+    </div>
+    <%# ホームチーム画像 %>
+    <span class="versus">VS</span>
+    <%# アウェイチーム画像%>
+      <div class="img-upload">
+      <%= form.file_field :away_team_image, class:"team-image", id:"team-image" %>
+      <div class="click-upload">
+      <div class='image-text'>アウェイ側</div>
+        <p>
+        ※ホームとアウェイ両方選択
+        </p>
+      </div>
+        </div>
+      </div>
+    </div>
+      <%# アウェイチーム画像%>
+    <%# ホームチームスコア %>
+    <div class="score">
+    <div class='important2'>
+          <div class='team-image'>チーム画像</div>
+            <div class="weight-bold-text">
+                    <span class="indispensable">必須</span>
+            </div>
+        </div>
+        <div class='team-vs'>
+      <div class="important">
+        <p>ホームチームスコア</p>
+        <%= form.text_field :home_team_score, class:"home-team-score", placeholder: "ホームチームスコア" %>
+      </div>
+      <%# ホームチームスコア %>
+      <span class="score-">-</span>
+      <%# アウェイチームスコア %>
+      <div class="important">
+        <p>アウェイチームスコア</p>
+          <%= form.text_field :away_team_score, class:"away-team-score", placeholder: "アウェイチームスコア" %>
+          </div>
+        </div>
+      </div>
+      <%# アウェイチームスコア %>
+      <%# 日付 %>
+      <div class="input-birth">
+          <div class='important2'>
+          <div class='team-image'>試合日付</div>
+            <div class="weight-bold-text">
+                    <span class="indispensable">必須</span>
+            </div>
+        </div>
+        <div class='input-birth-wrap'>
+          <%= raw sprintf(
+                  form.date_select(
+                    :date,
+                    class:'select-date',
+                    id:"birth-date",
+                    use_month_numbers: true,
+                    prompt:'--',
+                    start_year: 2020,
+                    end_year: (Time.now.year + 5),
+                    date_separator: '%s'),
+                  "<p> 年 </p>", "<p> 月 </p>") + "<p> 日 </p>" %>
+        </div>
+      </div>
+    <%# 日付 %>
+      <div class="sell-btn-contents">
+      <%= form.submit "変更する" ,class:"sell-btn" %>
+      <%=link_to 'もどる', root_path, class:"back-btn" %>
+    </div>
+      <% end %>
+  </div>
+</div>

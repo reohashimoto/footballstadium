@@ -38,4 +38,27 @@
             <%= link_to '削除', match_path(@match.id), method: :delete, class:'match-destroy-btn' %>
           </div>
       <% end %>
+  <div class="comments">
+    <% if user_signed_in? %>
+      <%= form_with(model:  [@match, @comment], local: true) do |form| %>
+        <div class="comment">
+          <%= form.text_area :text, placeholder: "コメントする", rows: "3", class:"comment2" %>
+        </div>
+        <div class="send">
+          <%= form.submit "SEND", class:"send-btn" %>
+        </div>
+      <% end %>
+    <% else %>
+      <strong><p>※※※ コメントの投稿には新規登録/ログインが必要です ※※※</p></strong>
+    <% end %>
+  </div>
+  <div class="comments">
+      <h4>＜コメント一覧＞</h4>
+      <% @comments.each do |comment| %>
+        <p>
+          <strong><%= link_to comment.user.nickname, "/users/#{comment.user_id}" %>：</strong>
+          <%= comment.text %>
+        </p>
+      <% end %>
+    </div>
 </li>
