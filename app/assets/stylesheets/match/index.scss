@@ -21,14 +21,20 @@
   display: block;
   text-align: center;
 }
+
+.index-league1 {
+  padding-left: 30px;
+}
 .index-date1 {
   font-size: 10px;
 }
 
-.list {
+.list-2 {
   display: block;
   background-color: white;
   margin: 20px;
+  border-radius: 30px;
+  border: solid 5px #4ec4d3;
 }
 
 .item-img {
@@ -40,10 +46,12 @@
   display: flex;
   justify-content: center;
 }
+
 .match-content {
+  background-color: #ccc;
   display: flex;
   text-align: center;
-  border: 1px solid #CCC;
+  border: 1px solid black;
   padding: 0 30px;
 }
 
@@ -57,4 +65,12 @@
 
 .score1 {
   padding: 50px 10px 0 10px;
+}
+
+li {
+  list-style: none;
+}
+
+.like {
+  float: right;
 }

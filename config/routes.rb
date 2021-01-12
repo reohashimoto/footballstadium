@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   root to: 'matches#index'
   resources :matches do
       resources :comments, only: :create
+      resources :likes, only: [:create, :destroy]
   end
+  resources :users, only: :show
 end
