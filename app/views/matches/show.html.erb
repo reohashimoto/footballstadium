@@ -1,5 +1,6 @@
 <%= render "shared/second-header" %>
 <li class='list'>
+ <div class='list-2'>
             <div class='match-date'>
                     <div class='show-league'><%= @match.league %></div>
                     <div class='show-date'><%= @match.date %></div>
@@ -31,6 +32,14 @@
          <div class='place-large'>
              <div class='show-place'>開催地：<%= @match.place %></div>
          </div>
+          <div class='like'>
+              <h3>⭐️件数: <%= @match.likes.count %></h3>
+              <% if current_user.already_liked?(@match) %>
+                <%= button_to '⭐️を取り消す', match_like_path(@match), method: :delete %>
+              <% else %>
+                <%= button_to '⭐️', match_likes_path(@match) %>
+              <% end %>
+            </div>
       <% if user_signed_in? && current_user.id == @match.user_id %>
          <div class='match-edit'>
             <%= link_to '試合結果の編集', edit_match_path(@match.id), method: :get, class: "match-red-btn" %>
@@ -38,6 +47,7 @@
             <%= link_to '削除', match_path(@match.id), method: :delete, class:'match-destroy-btn' %>
           </div>
       <% end %>
+      </div>
   <div class="comments">
     <% if user_signed_in? %>
       <%= form_with(model:  [@match, @comment], local: true) do |form| %>

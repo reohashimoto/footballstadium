@@ -1,0 +1,48 @@
+<%= render "shared/second-header"%>
+<div class="contents-show-row">
+  <div class="show-nickname">
+    <h1 class="nickname1"><%= @nickname %>さんの投稿一覧</h1>
+  </div>
+    <% @matches.each do |match|%>
+      <li class='list'>
+        <div class='list-2'>
+        <%= link_to match_path(match.id) do %>
+                <div class='match-date'>
+                        <div class='index-league1'><%= match.league %></div>
+                        <div class='index-date1'><%= match.date %></div>
+                </div>
+            <div class='match-important'>
+            <div class='match-content'>
+                <div class='score-name'>
+                    <%= image_tag match.home_team_image, class: "item-img" %>
+                    <div class='team-name1'>
+                      <%= match.home_team_name %>
+                    </div>
+                </div>
+                <div class='score1'>
+                  <%= match.home_team_score %>
+                </div>
+              </div>
+              <div class='match-content'>
+                <div class='score1'>
+                  <%= match.away_team_score %>
+                </div>
+                <div class='score-name'>
+                    <%= image_tag match.away_team_image, class: "item-img" %>
+                    <div class='team-name1'>
+                    <%= match.away_team_name %>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class='place-large'>
+             <div class='show-place'>開催地：<%= match.place %></div>
+         </div>
+          <div class='like-users'>
+              <h3>⭐️ : <%= match.likes.count %></h3>
+            </div>
+          <% end %>
+        </div>
+      </li>
+    <% end %>
+</div>

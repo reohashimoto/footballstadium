@@ -14,4 +14,6 @@ class Match < ApplicationRecord
       has_one_attached :home_team_image
       has_one_attached :away_team_image
       has_many :comments
+      has_many :likes
+      has_many :liked_users, through: :likes, source: :user
 end

@@ -14,11 +14,13 @@
 .post {
   font-size: 30px;
   font-weight: bold;
-  color: #6091d3;/*文字色*/
-  background: #fff;
-  border: solid 3px #6091d3;/*線*/
-  border-radius: 10px;/*角の丸み*/
   font-family: 'Anton', sans-serif;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #474747;
+  background: whitesmoke;/*背景色*/
+  border-left: double 7px #4ec4d3;/*左線*/
+  border-right: double 7px #4ec4d3;/*右線*/
 }
 
 a {
@@ -37,7 +39,7 @@ ul {
   display: flex;
   margin:0 0 0 auto;
   padding:0;
-  list-style:none;
+  list-style: none;
 }
 
 .grid-6 {
