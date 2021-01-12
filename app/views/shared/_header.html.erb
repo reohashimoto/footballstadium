@@ -5,7 +5,6 @@
       <ul>
        <li><%= link_to '試合結果投稿', new_match_path, class: "post" %>
        <li><%= link_to 'マイページ', user_path(current_user.id), class: "post" %></li>
-       <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "post" %></li> 
       </ul>
        <% else %>
        <ul>
