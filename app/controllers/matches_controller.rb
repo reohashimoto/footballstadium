@@ -1,5 +1,6 @@
 class MatchesController < ApplicationController
   before_action :set_item, only: [:edit, :show, :update, :destroy]
+  before_action :move_to_index, only: [:new, :create, :edit, :update, :destroy]
   def index
     @matches = Match.all.order("created_at DESC")
   end
@@ -38,6 +39,11 @@ class MatchesController < ApplicationController
     @match.destroy
     redirect_to root_path
   end
+
+  def search
+    @matches = Match.search(params[:keyword])
+  end
+
     private
 
     def match_params
@@ -46,5 +52,11 @@ class MatchesController < ApplicationController
 
     def set_item
       @match = Match.find(params[:id])
+    end
+
+    def move_to_index
+      unless user_signed_in?
+        redirect_to action: :index
+      end
     end
   end

@@ -2,6 +2,7 @@
       <div class="header__bar row">
         <h1 class="grid-6"><a href="/">FootballStadium</a></h1>
         <ul>
+          <li><%= link_to '試合結果投稿', new_match_path, class: "post" %>
           <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "post" %></li> 
         </ul>
       </div>

@@ -4,12 +4,12 @@
     <h1 class="nickname1"><%= @nickname %>さんの投稿一覧</h1>
   </div>
     <% @matches.each do |match|%>
-      <li class='list'>
+      <li class='user-list'>
         <div class='list-2'>
         <%= link_to match_path(match.id) do %>
-                <div class='match-date'>
-                        <div class='index-league1'><%= match.league %></div>
-                        <div class='index-date1'><%= match.date %></div>
+                <div class='match-date2'>
+                        <div class='show-league'><%= match.league %></div>
+                        <div class='show-date1'><%= match.date %></div>
                 </div>
             <div class='match-important'>
             <div class='match-content'>
@@ -37,9 +37,6 @@
             </div>
             <div class='place-large'>
              <div class='show-place'>開催地：<%= match.place %></div>
-         </div>
-          <div class='like-users'>
-              <h3>⭐️ : <%= match.likes.count %></h3>
             </div>
           <% end %>
         </div>

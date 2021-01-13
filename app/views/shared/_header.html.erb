@@ -1,6 +1,12 @@
 <header class="header">
       <div class="header__bar row">
         <h1 class="grid-6"><a href="/">FootballStadium</a></h1>
+         <div class="search">
+          <%= form_with(url: search_matches_path, local: true, method: :get, class: "search-form") do |form| %>
+            <%= form.text_field :keyword, placeholder: "試合を検索する", class: "search-input" %>
+            <%= form.submit "検索", class: "search-btn" %>
+          <% end %>
+         </div>
             <% if user_signed_in? %>
       <ul>
        <li><%= link_to '試合結果投稿', new_match_path, class: "post" %>

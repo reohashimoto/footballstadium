@@ -3,3 +3,4 @@ class UsersController < ApplicationController
     @nickname = current_user.nickname
     @matches = current_user.matches
   end
+end

@@ -1,6 +1,18 @@
 .contents-show-row {
   display: block;
+  justify-content: center;
+  text-align: center;
+}
+.match-date2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.user-list {
+  margin: auto;
+  width: 600px;
 }
 .like-users {
   float: right;
+  margin-bottom: 50px;
 }
