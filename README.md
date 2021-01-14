@@ -28,6 +28,11 @@ footoballstadiumのDB設計
 |away_team_image      |string  |null: false               |
 |home_team_score      |integer |null: false               |
 |away_team_score      |integer |null: false               |
+|home_team_scorer     |integer |                          |
+|away_team_scorer     |integer |                          |
+|league               |integer |null: false               |
+|place                |integer |null: false               |
+|review               |integer |                          |
 |date                 |date    |null: false               |
 
 ### Association
