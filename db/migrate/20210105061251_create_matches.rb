@@ -8,6 +8,9 @@ class CreateMatches < ActiveRecord::Migration[6.0]
       t.date    :date
       t.string  :league
       t.string  :place
+      t.string  :home_team_scoreler
+      t.string  :away_team_scoreler
+      t.string  :review
       t.references :user, foreign_key: true
       t.timestamps
     end

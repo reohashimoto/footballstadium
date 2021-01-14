@@ -47,7 +47,24 @@
   border: 1px solid #aaa;
 }
 
-.league,.place,.team-name,.team-image,.score,.input-birth{
+.important3 {
+  display: flex;
+  justify-content: center;
+  padding: 0 30px 30px 30px;
+}
+
+.home-team-scoreler,.away-team-scoreler {
+  height: 100px;
+}
+
+.review-text {
+  height: 100px;
+  width: 500px;
+}
+.review1 {
+  padding: 30px;
+}
+.league,.place,.team-name,.team-image,.score,.scoreler,.match-review,.input-birth {
   justify-content: center;
   text-align: center;
   border: 1px solid #aaa;

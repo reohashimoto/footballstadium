@@ -58,6 +58,9 @@ ActiveRecord::Schema.define(version: 2021_01_12_042407) do
     t.date "date"
     t.string "league"
     t.string "place"
+    t.string "home_team_scoreler"
+    t.string "away_team_scoreler"
+    t.string "review"
     t.bigint "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
