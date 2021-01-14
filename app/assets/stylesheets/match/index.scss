@@ -23,10 +23,13 @@
 }
 
 .index-league1 {
+  color: white;
   padding-left: 30px;
+  font-weight: 900;
 }
 .index-date1 {
-  font-size: 10px;
+  color: white;
+  font-size: 20px;
 }
 
 .list-2 {
@@ -35,6 +38,8 @@
   margin: 20px;
   border-radius: 30px;
   border: solid 5px #4ec4d3;
+  background-image: image-url("image_foot3.jpg");
+  background-size: 400px 230px;
 }
 
 .item-img {
@@ -48,7 +53,8 @@
 }
 
 .match-content {
-  background-color: #ccc;
+  background-color: gainsboro;
+  color: black;
   display: flex;
   text-align: center;
   border: 1px solid black;
@@ -73,4 +79,29 @@ li {
 
 .like {
   float: right;
+}
+
+.news-index {
+  text-align: center;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  margin-right: 70px;
+  border: solid 1px white;
+  padding: 10px 50px 70px 50px;
+  border-radius: 30px;
+  border: solid 2px black;
+}
+
+.news2 {
+  padding-bottom: 20px;
+}
+.news1 {
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: solid 2px black;
+}
+
+.newsshow {
+  display: block;
 }
