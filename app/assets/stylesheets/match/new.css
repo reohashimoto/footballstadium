@@ -53,7 +53,7 @@
   padding: 0 30px 30px 30px;
 }
 
-.home-team-scoreler,.away-team-scoreler {
+.home-team-scoreler1,.away-team-scoreler1 {
   height: 100px;
 }
 
@@ -64,7 +64,7 @@
 .review1 {
   padding: 30px;
 }
-.league,.place,.team-name,.team-image,.score,.scoreler,.match-review,.input-birth {
+.league,.place,.team-name,.team-image,.score,.scoreler1,.match-review,.input-birth {
   justify-content: center;
   text-align: center;
   border: 1px solid #aaa;

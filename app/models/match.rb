@@ -9,7 +9,6 @@ class Match < ApplicationRecord
       validates :date
       validates :league
       validates :place
-      validates :review
     end
       belongs_to :user
       has_one_attached :home_team_image
