@@ -1,4 +1,10 @@
-.show-league,.team-show-name {
+.show-league {
+  color: antiquewhite;
+  font-size: 40px;
+}
+
+.team-show-name {
+  color: black;
   font-size: 40px;
 }
 
@@ -13,6 +19,7 @@
 }
 
 .place-large {
+  color: aliceblue;
   text-align: center;
   padding-top: 30px;
   font-size: 40px;
@@ -63,4 +70,41 @@
   height: 60px;
   background: skyblue;
   border-radius: 30px;
+}
+
+.scoreler {
+  background-color: aliceblue;
+  margin: auto;
+  width: 700px;
+  height: 400px;
+}
+.show-scoreler {
+  text-align: center;
+  border: solid 1px gray;
+  font-size: 30px;
+}
+.home-team-scoreler,.away-team-scoreler {
+  margin: 30px;
+  border: solid 2px black;
+  height: 300px;
+  width: 300px;
+}
+
+.scoreler2 {
+  display: flex;
+  justify-content: center;
+}
+
+.review {
+  border: solid 1px black;
+  background-color: aliceblue;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  width: 700px;
+  height: 300px;
+}
+
+.show-review {
+  font-size: 30px;
 }

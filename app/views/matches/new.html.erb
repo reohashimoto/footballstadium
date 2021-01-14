@@ -3,6 +3,7 @@
   <div class="contents2">
     <h1 class="match-made">試合結果作成</h1>
     <%= form_with(model: @match, local: true) do |form| %>
+    <%= render 'shared/error_messages', model: form.object  %>
               <%# リーグ名 %>
               <div class='league'>
                   <div class='important2'>
@@ -100,19 +101,19 @@
       </div>
       <%# アウェイチームスコア %>
       <%# ホームチームスコアラー%>
-      <div class="scoreler">
+      <div class="scoreler1">
       <div class="important2">スコアラー</div>
       <div class="important3">
         <div class="important">
           <p>ホームチームスコアラー</p>
-                <%= form.text_area :home_team_scoreler, class:"home-team-scoreler", id:"home-team-name", placeholder:"例）⚽️ 32分 ネイマール  （アシスト：ムバッペ）" %>
+                <%= form.text_area :home_team_scoreler, class:"home-team-scoreler1", id:"home-team-name", placeholder:"例）⚽️ 32分 ネイマール  （アシスト：ムバッペ）" %>
         </div>
         <%# ホームチームスコアラー%>
         <span class="score-">-</span>
         <%# アウェイチームスコアラー%>
           <div class="important">
             <p>アウェイチームスコアラー</p>
-                <%= form.text_area :away_team_scoreler, class:"away-team-scoreler", id:"away-team-name", placeholder:"例）⚽️ 57分 ロナウド   （アシスト：ラビオ）" %>
+                <%= form.text_area :away_team_scoreler, class:"away-team-scoreler1", id:"away-team-name", placeholder:"例）⚽️ 57分 ロナウド   （アシスト：ラビオ）" %>
           </div>
         </div>
       </div>

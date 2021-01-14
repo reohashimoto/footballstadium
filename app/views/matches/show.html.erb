@@ -32,6 +32,25 @@
          <div class='place-large'>
              <div class='show-place'>開催地：<%= @match.place %></div>
          </div>
+         <div class="scoreler">
+          <div class="show-scoreler">スコアラー</div>
+            <div class="scoreler2">
+              <div class="home-team-scoreler">ホームチーム
+                <%= @match.home_team_scoreler %>
+              </div>
+              <div class="away-team-scoreler">アウェイチーム
+                <%= @match.away_team_scoreler%>
+              </div>
+          </div>
+         </div>
+         <div class="review1">
+          <div class="review">
+            <div class="show-review">マッチレビュー</div>
+            <div class="match-review">
+              <%= @match.review%>
+            </div>
+          </div>
+         </div>
           <div class='like'>
               <h3>⭐️件数: <%= @match.likes.count %></h3>
               <% if current_user.already_liked?(@match) %>

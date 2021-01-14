@@ -1,5 +1,3 @@
-
-
 .title-contents {
   background-image: image-url("image_top.jpg");
   border: 1px solid #CCC;
@@ -12,6 +10,9 @@
   justify-content: center;
 }
 
+.title-contents2 {
+  margin-right: 200px;
+}
 .new-match {
   text-align: center;
 }
@@ -75,6 +76,22 @@
 
 li {
   list-style: none;
+}
+
+.news-list {
+  padding-bottom: 30px;
+}
+
+.news1 {
+  text-decoration: underline;
+  color: #002080;
+}
+
+.news2 {
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #0033cc;
 }
 
 .like {

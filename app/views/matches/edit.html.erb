@@ -99,6 +99,37 @@
         </div>
       </div>
       <%# アウェイチームスコア %>
+      <%# ホームチームスコアラー%>
+      <div class="scoreler1">
+      <div class="important2">スコアラー</div>
+      <div class="important3">
+        <div class="important">
+          <p>ホームチームスコアラー</p>
+                <%= form.text_area :home_team_scoreler, class:"home-team-scoreler1", id:"home-team-name", placeholder:"例）⚽️ 32分 ネイマール  （アシスト：ムバッペ）" %>
+        </div>
+        <%# ホームチームスコアラー%>
+        <span class="score-">-</span>
+        <%# アウェイチームスコアラー%>
+          <div class="important">
+            <p>アウェイチームスコアラー</p>
+                <%= form.text_area :away_team_scoreler, class:"away-team-scoreler1", id:"away-team-name", placeholder:"例）⚽️ 57分 ロナウド   （アシスト：ラビオ）" %>
+          </div>
+        </div>
+      </div>
+      <%# アウェイチームスコアラー%>
+      <%# マッチレビュー %>
+       <div class='match-review'>
+                  <div class='important2'>
+                  <div class='league-name'>マッチレビュー</div>
+                  <div class="weight-bold-text">
+                    <span class="indispensable">必須</span>
+                    </div>
+                  </div>
+                  <div class="review1">
+                   <%= form.text_area :review, class:"review-text", id:"league-name", placeholder:"例）お互い様子を見合う展開だったが、前半32分に先制点が決まると..." %>
+                  </div>
+        </div>
+      <%# マッチレビュー %>
       <%# 日付 %>
       <div class="input-birth">
           <div class='important2'>
