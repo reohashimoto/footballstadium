@@ -9,7 +9,9 @@
   display: flex;
   justify-content: center;
 }
-
+.topics {
+  text-align: center;
+}
 .title-contents2 {
   margin-right: 200px;
 }
@@ -78,9 +80,7 @@ li {
   list-style: none;
 }
 
-.news-list {
-  padding-bottom: 30px;
-}
+
 
 .news1 {
   text-decoration: underline;
@@ -104,7 +104,6 @@ li {
   position: absolute;
   right: 0;
   margin-right: 70px;
-  border: solid 1px white;
   padding: 10px 50px 70px 50px;
   border-radius: 30px;
   border: solid 2px black;
@@ -118,7 +117,15 @@ li {
   padding-bottom: 10px;
   border-bottom: solid 2px black;
 }
-
+.news-list{
+  color: black;
+  font-size: 20px;
+}
 .newsshow {
   display: block;
+}
+
+.slick-slide img {
+  margin: auto;
+  padding: 20px;
 }
