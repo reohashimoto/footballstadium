@@ -33,12 +33,12 @@
              <div class='show-place'>開催地：<%= @match.place %></div>
          </div>
          <div class="scoreler">
-          <div class="show-scoreler">スコアラー</div>
+          <div class="show-scoreler">⚽️ スコアラー ⚽️</div>
             <div class="scoreler2">
-              <div class="home-team-scoreler">ホームチーム
+              <div class="home-team-scoreler">HOMEチーム
                 <%= @match.home_team_scoreler %>
               </div>
-              <div class="away-team-scoreler">アウェイチーム
+              <div class="away-team-scoreler">AWAYチーム
                 <%= @match.away_team_scoreler%>
               </div>
           </div>
@@ -51,14 +51,14 @@
             </div>
           </div>
          </div>
-          <div class='like'>
-              <h3>⭐️件数: <%= @match.likes.count %></h3>
+          <div class='like-show'>
+              <h3>👍 件数: <%= @match.likes.count %></h3>
               <% if current_user.already_liked?(@match) %>
-                <%= button_to '⭐️を取り消す', match_like_path(@match), method: :delete %>
+                <%= button_to '👍 を取り消す', match_like_path(@match), method: :delete %>
               <% else %>
-                <%= button_to '⭐️', match_likes_path(@match) %>
+                <%= button_to '👍', match_likes_path(@match) %>
               <% end %>
-            </div>
+          </div>
       <% if user_signed_in? && current_user.id == @match.user_id %>
          <div class='match-edit'>
             <%= link_to '試合結果の編集', edit_match_path(@match.id), method: :get, class: "match-red-btn" %>
