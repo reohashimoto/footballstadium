@@ -1,5 +1,6 @@
 .row {
   text-align: center;
+  justify-content: center;
 }
 
 .container {

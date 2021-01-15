@@ -1,4 +1,4 @@
-<%= render "shared/second-header" %>
+<%= render "shared/header" %>
 <li class='list'>
  <div class='list-2'>
             <div class='match-date'>
@@ -51,14 +51,6 @@
             </div>
           </div>
          </div>
-          <div class='like-show'>
-              <h3>👍 件数: <%= @match.likes.count %></h3>
-              <% if current_user.already_liked?(@match) %>
-                <%= button_to '👍 を取り消す', match_like_path(@match), method: :delete %>
-              <% else %>
-                <%= button_to '👍', match_likes_path(@match) %>
-              <% end %>
-          </div>
       <% if user_signed_in? && current_user.id == @match.user_id %>
          <div class='match-edit'>
             <%= link_to '試合結果の編集', edit_match_path(@match.id), method: :get, class: "match-red-btn" %>

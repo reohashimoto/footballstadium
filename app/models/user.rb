@@ -13,9 +13,4 @@ class User < ApplicationRecord
          end
          has_many :matches
          has_many :comments
-         has_many :likes
-         has_many :liked_matches, through: :likes, source: :match
-         def already_liked?(match)
-            self.likes.exists?(match_id: match.id)
-         end
 end

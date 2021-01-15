@@ -21,7 +21,6 @@ class MatchesController < ApplicationController
   def show
     @comment = Comment.new
     @comments = @match.comments.includes(:user)
-    @like = Like.new
   end
   
   def edit
