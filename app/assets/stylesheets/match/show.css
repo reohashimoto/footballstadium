@@ -93,6 +93,7 @@
 .scoreler2 {
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .review {
@@ -107,4 +108,18 @@
 
 .show-review {
   font-size: 30px;
+}
+
+h3 {
+  color: white;
+}
+
+.like-show {
+  padding: 0 30px 30px 0;
+  font-size: 30px;
+  float: right;
+}
+
+.scoreler,.review{
+  border-radius: 30px;
 }
