@@ -11,6 +11,7 @@ class User < ApplicationRecord
             validates :favorite_player
             validates :birthday
          end
-         has_many :matches
+         has_many :matches, dependent: :destroy
          has_many :comments
+
 end
