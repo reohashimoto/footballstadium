@@ -1,7 +1,17 @@
 .contents-show-row {
+  background-image: image-url("image_man.jpg");
+  border: 1px solid #CCC;
+  height:900px;
+  min-width:100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
   display: block;
   justify-content: center;
   text-align: center;
+}
+.show-nickname1 {
+  color: antiquewhite;
 }
 .match-date2 {
   font-size: 20px;
