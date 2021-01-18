@@ -2,7 +2,7 @@ class MatchesController < ApplicationController
   before_action :set_item, only: [:edit, :show, :update, :destroy]
   before_action :move_to_index, only: [:new, :create, :edit, :update, :destroy]
   def index
-    @matches = Match.all.order("created_at DESC")
+    @matches = Match.all.order("created_at DESC").page(params[:page]).per(5)
   end
 
   def new
