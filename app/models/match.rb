@@ -4,8 +4,8 @@ class Match < ApplicationRecord
     validates :away_team_name
     validates :home_team_image
     validates :away_team_image
-      validates :home_team_score, format: { with: /\A[0-9]+\z/, message: "is invalid. Input half-width characters." }
-      validates :away_team_score, format: { with: /\A[0-9]+\z/, message: "is invalid. Input half-width characters." }
+      validates :home_team_score, :numericality => { :only_interger => true }
+      validates :away_team_score, :numericality => { :only_interger => true }
       validates :date
       validates :league
       validates :place
@@ -14,8 +14,6 @@ class Match < ApplicationRecord
       has_one_attached :home_team_image
       has_one_attached :away_team_image
       has_many :comments
-      has_many :likes
-      has_many :liked_users, through: :likes, source: :user
 
       def self.search(search)
         if search != ""
