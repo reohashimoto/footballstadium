@@ -17,7 +17,7 @@ class Match < ApplicationRecord
 
       def self.search(search)
         if search != ""
-          Match.where('home_team_name LIKE(?) or away_team_name LIKE(?)', "%#{search}%", "%#{search}%")
+          Match.where('home_team_name LIKE(?) or away_team_name LIKE(?) or league LIKE(?) or place LIKE(?)', "%#{search}%", "%#{search}%", "%#{search}%", "%#{search}%")
         else
           Match.all
         end
