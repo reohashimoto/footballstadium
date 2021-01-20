@@ -40,7 +40,7 @@ class MatchesController < ApplicationController
   end
 
   def search
-    @matches = Match.search(params[:keyword])
+    @matches = Match.search(params[:keyword]).order("created_at DESC").page(params[:page]).per(5)
   end
 
     private
