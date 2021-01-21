@@ -10,6 +10,8 @@ class Match < ApplicationRecord
       validates :league
       validates :place
     end
+
+
       belongs_to :user
       has_one_attached :home_team_image
       has_one_attached :away_team_image
