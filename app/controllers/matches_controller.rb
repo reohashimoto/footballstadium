@@ -46,7 +46,7 @@ class MatchesController < ApplicationController
     private
 
     def match_params
-      params.require(:match).permit(:home_team_name, :away_team_name, :home_team_image, :away_team_image, :home_team_score, :away_team_score, :date, :league, :place).merge(user_id: current_user.id)
+      params.require(:match).permit(:home_team_name, :away_team_name, :home_team_image, :away_team_image, :home_team_score, :away_team_score, :date, :league, :place, :home_team_scoreler, :away_team_scoreler, :review).merge(user_id: current_user.id)
     end
 
     def set_item

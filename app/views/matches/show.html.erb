@@ -35,11 +35,17 @@
          <div class="scoreler">
           <div class="show-scoreler">⚽️  スコアラー  ⚽️</div>
             <div class="scoreler2">
-              <div class="home-team-scoreler">HOMEチーム
+              <div class="home-team-scoreler">
+                <div class="home-team-name">
+                  HOMEチーム
+                </div>
                 <%= @match.home_team_scoreler %>
               </div>
-              <div class="away-team-scoreler">AWAYチーム
-                <%= @match.away_team_scoreler%>
+              <div class="away-team-scoreler">
+                <div class="away-team-name">
+                  AWAYチーム
+                </div>
+                <%= @match.away_team_scoreler %>
               </div>
           </div>
          </div>
@@ -47,7 +53,7 @@
           <div class="review">
             <div class="show-review">マッチレビュー</div>
             <div class="match-review">
-              <%= @match.review%>
+              <%= @match.review %>
             </div>
           </div>
          </div>
