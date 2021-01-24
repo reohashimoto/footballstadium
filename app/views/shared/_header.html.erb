@@ -9,6 +9,7 @@
          </div>
             <% if user_signed_in? %>
       <ul>
+       <li><%= link_to '試合予定一覧', newmatches_path, class: "post" %>
        <li><%= link_to '試合結果投稿', new_match_path, class: "post" %>
        <li><%= link_to 'マイページ', user_path(current_user.id), class: "post" %></li>
       </ul>

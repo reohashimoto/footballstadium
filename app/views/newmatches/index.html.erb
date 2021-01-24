@@ -1,0 +1,44 @@
+<%= render "shared/forth-header"%>
+
+<div class="title-contents">
+    <div class="title-contents2">
+      <p class='new-match'>Pick Up 予定試合</p>
+      <% @newmatches.each do |match|%>
+      <li class='list'>
+        <div class='list-2'>
+        <%= link_to match_path(match.id) do %>
+        
+            <div class='match-date'>
+                    <div class='index-league1'><%= match.league %>
+                    </div>
+                    <div class='index-date1'><%= match.date %></div>
+            </div>
+              <div class='match-important'>
+                <div class='match-content'>
+                  <div class='score-name'>
+                    <%= image_tag match.home_team_image, class: "item-img" %>
+                    <div class='team-name1'>
+                      <%= match.home_team_name %>
+                    </div>
+                  </div>
+                  <div class='score1'>
+                    <%= match.home_team_score %>
+                  </div>
+                </div>
+                <div class='match-content'>
+                  <div class='score1'>
+                    <%= match.away_team_score %>
+                  </div>
+                  <div class='score-name'>
+                      <%= image_tag match.away_team_image, class: "item-img" %>
+                    <div class='team-name1'>
+                      <%= match.away_team_name %>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              <% end %>
+            </div>
+          </li>
+        <% end %>
+    </div>
