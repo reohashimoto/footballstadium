@@ -43,8 +43,10 @@ https://footballstadium.herokuapp.com/
 [![Image from Gyazo](https://i.gyazo.com/8a2aaac7c4c3206435d662a08d2c6066.png)](https://gyazo.com/8a2aaac7c4c3206435d662a08d2c6066)
 
 ・ページネーション機能（kaminari）
+
 [![Image from Gyazo](https://i.gyazo.com/e85434cc2b6da2cd31b502e76afe0e4f.gif)](https://gyazo.com/e85434cc2b6da2cd31b502e76afe0e4f)
 ・画像スライド（slick）
+
 [![Image from Gyazo](https://i.gyazo.com/1133c690cc298795eb39033acff87dfa.gif)](https://gyazo.com/1133c690cc298795eb39033acff87dfa)
 
 ・試合検索機能（リーグや場所での検索も出来ます。）
