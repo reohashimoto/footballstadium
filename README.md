@@ -57,10 +57,6 @@ https://footballstadium.herokuapp.com/
 ・選手の登録
 ・試合予定の一覧
 
-# 参考画像・GIF
-[![Image from Gyazo](https://i.gyazo.com/cd6386b8d37f49ba5c62ceeb85179ffa.gif)](https://gyazo.com/cd6386b8d37f49ba5c62ceeb85179ffa)
-
-
 
 # footoballstadiumのDB設計
 
@@ -91,8 +87,8 @@ https://footballstadium.herokuapp.com/
 |away_team_image      |string  |null: false               |
 |home_team_score      |integer |null: false               |
 |away_team_score      |integer |null: false               |
-|home_team_scorer     |integer |                          |
-|away_team_scorer     |integer |                          |
+|home_team_scoreler   |integer |                          |
+|away_team_scoreler   |integer |                          |
 |league               |integer |null: false               |
 |place                |integer |null: false               |
 |review               |integer |                          |
