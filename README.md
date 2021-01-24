@@ -36,13 +36,18 @@ https://footballstadium.herokuapp.com/
 
 # 実装した機能
 ・ユーザー登録機能（device）
+
 ・試合結果投稿機能
+
 ・コメント投稿機能
 [![Image from Gyazo](https://i.gyazo.com/8a2aaac7c4c3206435d662a08d2c6066.png)](https://gyazo.com/8a2aaac7c4c3206435d662a08d2c6066)
+
 ・ページネーション機能（kaminari）
-[![Image from Gyazo](https://i.gyazo.com/9688067bf25aa9782bfc0532454e4c3a.gif)](https://gyazo.com/9688067bf25aa9782bfc0532454e4c3a)
+[![Image from Gyazo](https://i.gyazo.com/e7dc6c693d490cdeedbba4bb46295bed.gif)](https://gyazo.com/e7dc6c693d490cdeedbba4bb46295bed)
+
 ・画像スライド（slick）
 [![Image from Gyazo](https://i.gyazo.com/1133c690cc298795eb39033acff87dfa.gif)](https://gyazo.com/1133c690cc298795eb39033acff87dfa)
+
 ・試合検索機能（リーグや場所での検索も出来ます。）
 [![Image from Gyazo](https://i.gyazo.com/8355838d07ab13c301aec2fd2746739f.gif)](https://gyazo.com/8355838d07ab13c301aec2fd2746739f)
 
