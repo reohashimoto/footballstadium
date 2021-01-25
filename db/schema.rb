@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_01_12_042407) do
+ActiveRecord::Schema.define(version: 2021_01_24_123331) do
 
   create_table "active_storage_attachments", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name", null: false
@@ -67,6 +67,20 @@ ActiveRecord::Schema.define(version: 2021_01_12_042407) do
     t.index ["user_id"], name: "index_matches_on_user_id"
   end
 
+  create_table "newmatches", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "home_team_name", null: false
+    t.string "away_team_name", null: false
+    t.integer "home_team_score", null: false
+    t.integer "away_team_score", null: false
+    t.date "date", null: false
+    t.string "league", null: false
+    t.string "place", null: false
+    t.bigint "user_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_id"], name: "index_newmatches_on_user_id"
+  end
+
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -87,4 +101,5 @@ ActiveRecord::Schema.define(version: 2021_01_12_042407) do
   add_foreign_key "likes", "matches"
   add_foreign_key "likes", "users"
   add_foreign_key "matches", "users"
+  add_foreign_key "newmatches", "users"
 end
