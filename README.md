@@ -44,7 +44,8 @@ https://footballstadium.herokuapp.com/
 
 ・ページネーション機能（kaminari）
 
-[![Image from Gyazo](https://i.gyazo.com/e85434cc2b6da2cd31b502e76afe0e4f.gif)](https://gyazo.com/e85434cc2b6da2cd31b502e76afe0e4f)
+[![Image from Gyazo](https://i.gyazo.com/ab217dcbcdb704b0d186c325053d4fba.gif)](https://gyazo.com/ab217dcbcdb704b0d186c325053d4fba)
+
 ・画像スライド（slick）
 
 [![Image from Gyazo](https://i.gyazo.com/1133c690cc298795eb39033acff87dfa.gif)](https://gyazo.com/1133c690cc298795eb39033acff87dfa)
@@ -57,6 +58,8 @@ https://footballstadium.herokuapp.com/
 ・選手の登録
 ・試合予定の一覧
 
+# 参考画像
+[![Image from Gyazo](https://i.gyazo.com/291adddfb28c3503514b149a0c89a9bf.gif)](https://gyazo.com/291adddfb28c3503514b149a0c89a9bf)
 
 # footoballstadiumのDB設計
 
