@@ -24,6 +24,9 @@ https://footballstadium.herokuapp.com/
 # 課題解決
 私は海外でサッカーをしていました。その時にサッカーの結果を見ることができるサイトがあり、そのサイトでは一部二部のリーグのみだけでなく私が所属している下部リーグの結果まで見ることができました。日本にはJリーグより下のリーグの試合結果を確認できるものがなく、私自信が必要だと感じたためこのようなサイトを作りました。サポーターやファンの方からすればアウェーの試合などは遠い場合だと見にいけない場合があるのですぐに結果を確認することができませんが、このサイトを利用することでいち早く結果の確認ができます。
 
+# 参考画像
+[![Image from Gyazo](https://i.gyazo.com/291adddfb28c3503514b149a0c89a9bf.gif)](https://gyazo.com/291adddfb28c3503514b149a0c89a9bf)
+
 # 洗い出した要件
 ・ユーザー登録機能（device）
 ・試合結果投稿機能
@@ -42,10 +45,6 @@ https://footballstadium.herokuapp.com/
 ・コメント投稿機能
 [![Image from Gyazo](https://i.gyazo.com/8a2aaac7c4c3206435d662a08d2c6066.png)](https://gyazo.com/8a2aaac7c4c3206435d662a08d2c6066)
 
-・ページネーション機能（kaminari）
-
-[![Image from Gyazo](https://i.gyazo.com/dcc18fc33b981ca6bae6f018de848ef1.gif)](https://gyazo.com/dcc18fc33b981ca6bae6f018de848ef1)
-
 ・画像スライド（slick）
 
 [![Image from Gyazo](https://i.gyazo.com/1133c690cc298795eb39033acff87dfa.gif)](https://gyazo.com/1133c690cc298795eb39033acff87dfa)
@@ -53,13 +52,16 @@ https://footballstadium.herokuapp.com/
 ・試合検索機能（リーグや場所での検索も出来ます。）
 [![Image from Gyazo](https://i.gyazo.com/8355838d07ab13c301aec2fd2746739f.gif)](https://gyazo.com/8355838d07ab13c301aec2fd2746739f)
 
+・ページネーション機能（kaminari）
+
+[![Image from Gyazo](https://i.gyazo.com/dcc18fc33b981ca6bae6f018de848ef1.gif)](https://gyazo.com/dcc18fc33b981ca6bae6f018de848ef1)
+
+
 # 実装予定の機能
 ・リーグ自体の登録
 ・選手の登録
 ・試合予定の一覧
 
-# 参考画像
-[![Image from Gyazo](https://i.gyazo.com/291adddfb28c3503514b149a0c89a9bf.gif)](https://gyazo.com/291adddfb28c3503514b149a0c89a9bf)
 
 # footoballstadiumのDB設計
 
