@@ -44,7 +44,7 @@ https://footballstadium.herokuapp.com/
 
 ・ページネーション機能（kaminari）
 
-[![Image from Gyazo](https://i.gyazo.com/ab217dcbcdb704b0d186c325053d4fba.gif)](https://gyazo.com/ab217dcbcdb704b0d186c325053d4fba)
+[![Image from Gyazo](https://i.gyazo.com/dcc18fc33b981ca6bae6f018de848ef1.gif)](https://gyazo.com/dcc18fc33b981ca6bae6f018de848ef1)
 
 ・画像スライド（slick）
 
