@@ -25,7 +25,9 @@ https://footballstadium.herokuapp.com/
 私は海外でサッカーをしていました。その時にサッカーの結果を見ることができるサイトがあり、そのサイトでは一部二部のリーグのみだけでなく私が所属している下部リーグの結果まで見ることができました。日本にはJリーグより下のリーグの試合結果を確認できるものがなく、私自信が必要だと感じたためこのようなサイトを作りました。サポーターやファンの方からすればアウェーの試合などは遠い場合だと見にいけない場合があるのですぐに結果を確認することができませんが、このサイトを利用することでいち早く結果の確認ができます。
 
 # 参考画像
-[![Image from Gyazo](https://i.gyazo.com/291adddfb28c3503514b149a0c89a9bf.gif)](https://gyazo.com/291adddfb28c3503514b149a0c89a9bf)
+[![Image from Gyazo](https://i.gyazo.com/efd0441f6a832dfe755ad1e747ea5d22.png)](https://gyazo.com/efd0441f6a832dfe755ad1e747ea5d22)
+
+[![Image from Gyazo](https://i.gyazo.com/0073fed66a4ec9acf23341058ffe9841.png)](https://gyazo.com/0073fed66a4ec9acf23341058ffe9841)
 
 # 洗い出した要件
 ・ユーザー登録機能（device）
