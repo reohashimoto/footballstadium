@@ -92,8 +92,11 @@
 
 .scoreler2 {
   display: flex;
-  justify-content: center;
   text-align: center;
+}
+.scorer {
+text-align: justify;
+white-space: pre-line;
 }
 
 .review {
